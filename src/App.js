@@ -35,14 +35,14 @@ class App extends React.Component {
 
 
     this.setState({
-      todoitems: [...this.state.todoitems,newTodo]
+      todoitems: newTodo
     });
   }
 
 
   addItem = (itemName) => {
     this.setState({
-      todoItems: [...this.state.todoitems, {
+      todoitems: [...this.state.todoitems, {
         name: itemName,
         id: Date.now(),
         completed: false
